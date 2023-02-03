@@ -34,11 +34,11 @@ console.log('First animal is', animalArray[0])
 console.log('My second favorite food is', foodArray[1])
 
 // 3.b. TODO: Log the last animal in the array using it's array index 
-
+console.log('The 4th animal is:',animalArray[3]);
 
 // 3.c. (STRETCH) TODO: Log the last animal by using the array length, 
 //      instead of the exact index number of the last item
-
+console.log('The LAST animal is:', animalArray[ ( animalArray.length - 1 ) ] );
 
 
 // 4. Adding & Removing Array Items
@@ -49,8 +49,8 @@ animalArray.push('penguin');
 console.log('Added an animal to end,', animalArray);
 
 // 4.a. TODO: Add a new food at the end of your array & log the array
-
-
+foodArray.push('burrito')
+console.log('Added a food to the end,', foodArray);
 
 // Example: Remove the last animal by using Array.pop
 let removedAnimal = animalArray.pop();
@@ -59,14 +59,17 @@ console.log('The animals are now', animalArray);
 
 // 4.b. TODO: Remove the food at the end of your array & 
 //      log both the food removed and the updated array
-
+let removedFood = foodArray.pop();
+console.log('Removed the last food', removedFood);
+console.log('The foods are now', foodArray);
 
 // Example: Add an animal to the beginning using Array.unshift
 animalArray.unshift('walrus');
 console.log(`Added an animal to beginning: ${animalArray}`);
 
 // 4.c. TODO: Add a food at the beginning of the array & log the array
-
+foodArray.unshift('tacos');
+console.log('Added a food to the beginning:', foodArray);
 
 // Example: Remove the first animal using Array.shift
 removedAnimal = animalArray.shift();
@@ -75,10 +78,14 @@ console.log('The animals are now', animalArray);
 
 // 4.d TODO: Remove the food at the beginning of your array & 
 //     log both the food removed and the updated array
+removedFood = foodArray.shift();
+console.log('Removed the first food', removedFood);
+console.log('The foods are now', foodArray);
 
 // 4.e (STRETCH) TODO: Replace the second food in your array
 //      with another one of your favorite foods.
 //      Then log the updated array.
+
 
 // 4.f (STRETCH) TODO: Sort your favoriteFoods array
 //     in reverse alphabetical order. Log the array.

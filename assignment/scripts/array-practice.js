@@ -85,10 +85,21 @@ console.log('The foods are now', foodArray);
 // 4.e (STRETCH) TODO: Replace the second food in your array
 //      with another one of your favorite foods.
 //      Then log the updated array.
+//THIS Answer presumes knowledge of second item, and is not preferred, though works on an array this small.
+//Stack overflow is not better than MDN if this second one works.
+foodArray.splice(foodArray.indexOf('cheeseburger'), 1, 'spaghetti')
+console.log('The foods are now', foodArray);
+
+//Suggestion per MDN. Much better.
+foodArray.splice(1, 1, 'popsicles')
+console.log('The foods with a simple splice are now', foodArray);
 
 
 // 4.f (STRETCH) TODO: Sort your favoriteFoods array
 //     in reverse alphabetical order. Log the array.
+let sortedFoods = foodArray.sort()
+let reversedFoods = sortedFoods.reverse()
+console.log("reverse sorted foods are", reversedFoods)
 
 // 4.g (STRETCH) TODO: Convert your array to a string
 //     putting the word "and" between each item.
